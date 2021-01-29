@@ -938,7 +938,7 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@serialport/binding-abstract@^9.0.2":
+"@serialport/binding-abstract@^9.0.0", "@serialport/binding-abstract@^9.0.2":
   version "9.0.2"
   resolved "https://registry.npm.taobao.org/@serialport/binding-abstract/download/@serialport/binding-abstract-9.0.2.tgz#f06f1859b59875632cd263d3f3bb0711c885c78f"
   integrity sha1-8G8YWbWYdWMs0mPT87sHEciFx48=
@@ -953,7 +953,7 @@
     "@serialport/binding-abstract" "^9.0.2"
     debug "^4.1.1"
 
-"@serialport/bindings@^9.0.0", "@serialport/bindings@^9.0.4":
+"@serialport/bindings@^9.0.4":
   version "9.0.4"
   resolved "https://registry.npm.taobao.org/@serialport/bindings/download/@serialport/bindings-9.0.4.tgz#c8c24caf32d666a49a47b474ebd3f834f21481b3"
   integrity sha1-yMJMrzLWZqSaR7R069P4NPIUgbM=
@@ -964,6 +964,18 @@
     debug "^4.3.1"
     nan "^2.14.2"
     prebuild-install "^6.0.0"
+
+"@serialport/bindings@^9.0.6":
+  version "9.0.0"
+  resolved "https://registry.npm.taobao.org/@serialport/bindings/download/@serialport/bindings-9.0.0.tgz#a3289bbf80c03f7d90d95d05422c983f38c07812"
+  integrity sha1-oyibv4DAP32Q2V0FQiyYPzjAeBI=
+  dependencies:
+    "@serialport/binding-abstract" "^9.0.0"
+    "@serialport/parser-readline" "^9.0.0"
+    bindings "^1.5.0"
+    debug "^4.1.1"
+    nan "^2.14.1"
+    prebuild-install "^5.3.3"
 
 "@serialport/parser-byte-length@^9.0.1":
   version "9.0.1"
@@ -985,7 +997,7 @@
   resolved "https://registry.npm.taobao.org/@serialport/parser-inter-byte-timeout/download/@serialport/parser-inter-byte-timeout-9.0.1.tgz#3db6f51d472e5f4f3009d4b8433c9e3ff59b5dd3"
   integrity sha1-Pbb1HUcuX08wCdS4QzyeP/WbXdM=
 
-"@serialport/parser-readline@^9.0.1":
+"@serialport/parser-readline@^9.0.0", "@serialport/parser-readline@^9.0.1":
   version "9.0.1"
   resolved "https://registry.npm.taobao.org/@serialport/parser-readline/download/@serialport/parser-readline-9.0.1.tgz#f7c8b6c2cba17e8b20faf59d36f8c7d046887aa9"
   integrity sha1-98i2wsuhfosg+vWdNvjH0EaIeqk=
@@ -6448,9 +6460,9 @@ mz@^2.4.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
-nan@^2.12.1, nan@^2.14.2:
+nan@^2.12.1, nan@^2.14.1, nan@^2.14.2:
   version "2.14.2"
-  resolved "https://registry.npm.taobao.org/nan/download/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
+  resolved "https://registry.npm.taobao.org/nan/download/nan-2.14.2.tgz?cache=0&sync_timestamp=1602591675048&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnan%2Fdownload%2Fnan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
   integrity sha1-9TdkAGlRaPTMaUrJOT0MlYXu6hk=
 
 nanomatch@^1.2.9:
@@ -7514,6 +7526,27 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.27, postcss@^7.0.3
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+prebuild-install@^5.3.3:
+  version "5.3.6"
+  resolved "https://registry.npm.taobao.org/prebuild-install/download/prebuild-install-5.3.6.tgz?cache=0&sync_timestamp=1603474744353&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fprebuild-install%2Fdownload%2Fprebuild-install-5.3.6.tgz#7c225568d864c71d89d07f8796042733a3f54291"
+  integrity sha1-fCJVaNhkxx2J0H+HlgQnM6P1QpE=
+  dependencies:
+    detect-libc "^1.0.3"
+    expand-template "^2.0.3"
+    github-from-package "0.0.0"
+    minimist "^1.2.3"
+    mkdirp-classic "^0.5.3"
+    napi-build-utils "^1.0.1"
+    node-abi "^2.7.0"
+    noop-logger "^0.1.1"
+    npmlog "^4.0.1"
+    pump "^3.0.0"
+    rc "^1.2.7"
+    simple-get "^3.0.3"
+    tar-fs "^2.0.0"
+    tunnel-agent "^0.6.0"
+    which-pm-runs "^1.0.0"
+
 prebuild-install@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npm.taobao.org/prebuild-install/download/prebuild-install-6.0.0.tgz#669022bcde57c710a869e39c5ca6bf9cd207f316"
@@ -8245,7 +8278,7 @@ serialize-javascript@^4.0.0:
   dependencies:
     randombytes "^2.1.0"
 
-serialport@^9.0.0:
+serialport@^9.0.6:
   version "9.0.6"
   resolved "https://registry.npm.taobao.org/serialport/download/serialport-9.0.6.tgz#3b0bd8ce6a230566aab56ecb9d3556e7c3b5d889"
   integrity sha1-OwvYzmojBWaqtW7LnTVW58O12Ik=
